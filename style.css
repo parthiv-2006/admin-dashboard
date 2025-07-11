@@ -6,9 +6,9 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: repeat(auto-fit, 1fr);
-    gap: 10px;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto auto 1fr auto;
+    height: 100vh;
 }
 
 /* Styling for Dashboard Side bar */
@@ -16,8 +16,7 @@ body {
 .side-bar {
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row: 1 / 6;
     padding: 10px;
     background-color: darkcyan;
     color: white;   
@@ -27,9 +26,18 @@ body {
 /* Styling for Header */
 .header {
     grid-column-start: 2;
-    grid-column-end: 5;
-    padding: 10px;
+    grid-column-end: 3;
+    padding: 40px;
     background-color: white
+}
+
+.top-header, .bottom-header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profile, .display-message {
+    display: flex;
 }
 
 
@@ -37,8 +45,56 @@ body {
 
 .content {
     grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    padding: 10px;
+    grid-column-end: 4;
+    grid-row: 2/ 3;
+    
+    padding: 20px;
     background-color: lightgrey;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+}
+
+.your-projects {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.your-projects h2 { /* Added */
+    margin-top: 0; /* Added */
+    margin-bottom: 0; /* Added */
+}
+
+.right-main-section{
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.card {
+    height: 300px;
+    background-color: white;
+    padding: 15px;
+}
+
+.announcements, .trending {
+    background-color: white;
+    height: 250px;
+    padding: 15px;
+}
+
+/* Styling for Footer */
+
+.footer {
+    text-align: center;
+    background-color: bisque;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
