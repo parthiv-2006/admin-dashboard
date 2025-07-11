@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, 1fr);
+    gap: 10px;
+}
+
+/* Styling for Dashboard Side bar */
+
+.side-bar {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    padding: 10px;
+    background-color: darkcyan;
+    color: white;   
+}
+
+
+/* Styling for Header */
+.header {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    padding: 10px;
+    background-color: white
+}
+
+
+/* Styling for Main Content Section */
+
+.content {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    padding: 10px;
+    background-color: lightgrey;
+}
