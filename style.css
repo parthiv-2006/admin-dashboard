@@ -17,10 +17,37 @@ body {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row: 1 / 6;
-    padding: 10px;
+    padding: 5px;
     background-color: darkcyan;
     color: white;   
 }
+
+.side-bar h1 i{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+ol {
+    list-style-type: none;
+}
+
+.main-ol li, .support-ol li {
+    margin: 20px;
+}
+
+.main-ol li i, .support-ol li i{
+    margin-right: 10px;
+}
+
+.main-ol {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+li {
+    font-size: 20px;
+}
+
 
 
 /* Styling for Header */
@@ -53,7 +80,7 @@ body {
 }
 
 .content {
-    display: grid;
+    display: inline-grid;
     grid-template-columns: 2fr 1fr;
     gap: 15px;
 }
@@ -79,15 +106,21 @@ body {
 }
 
 .card {
-    height: 300px;
+    height: 327px;
     background-color: white;
     padding: 15px;
+    border-radius: 12px;
+}
+
+.announcements-section h2, .trending-section h2 {
+    text-align: center;
 }
 
 .announcements, .trending {
     background-color: white;
-    height: 250px;
+    height: 300px;
     padding: 15px;
+    border-radius: 12px;
 }
 
 /* Styling for Footer */
