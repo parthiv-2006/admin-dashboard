@@ -8,23 +8,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6fcb739a1a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
         <div class="side-bar">
-            <h1>Dashboard</h1>
-            <ol>
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Community</li>
+            <h1><i class="fa-brands fa-font-awesome"></i>Dashboard</h1>
+            <ol class="main-ol">
+                <li><i class="fa-solid fa-house"></i>Home</li>
+                <li><i class="fa-solid fa-user"></i>Profile</li>
+                <li><i class="fa-solid fa-message"></i>Messages</li>
+                <li><i class="fa-solid fa-clock"></i>History</li>
+                <li><i class="fa-solid fa-list-check"></i>Tasks</li>
+                <li><i class="fa-solid fa-person"></i>Community</li>
             </ol>
-            <ol>
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
+            <ol class="support-ol">
+                <li><i class="fa-solid fa-gear"></i>Settings</li>
+                <li><i class="fa-solid fa-question"></i>Support</li>
+                <li><i class="fa-solid fa-user-lock"></i>Privacy</li>
             </ol>
         </div>
 
@@ -58,46 +59,53 @@
         </div>
 
         <div class="content">
-            <h2>Your Projects</h2>
-            <div class="your-projects">
-                <div class="card">
-                    <h3>Super Cool Project</h3>
-                    <p>random random radnom random random</p>
+            <div class="your-projects-section"> <!-- NEW WRAPPER HERE -->
+                <h2>Your Projects</h2>
+                <div class="your-projects">
+                    <!-- Your card divs go here -->
+                    <div class="card">
+                        <h3>Super Cool Project</h3>
+                        <p>random random radnom random random</p>
+                    </div>
+                    <div class="card">
+                        <h3>Less Cool Project</h3>
+                        <p>random random radnom random random</p>
+                    </div>
+                    <div class="card">
+                        <h3>Impossible App</h3>
+                        <p>Easy Peasy App</p>
+                    </div>
+                    <div class="card">
+                        <h3>Ad Blocker</h3>
+                        <p>random random radnom random random</p>
+                    </div>
+                    <div class="card">
+                        <h3>Money Maker</h3>
+                        <p>random random radnom random random</p>
+                    </div>
+                    <div class="card">
+                        <h3>Easy Peasy App</h3>
+                        <p>random random radnom random random</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Less Cool Project</h3>
-                    <p>random random radnom random random</p>
-                </div>
-                <div class="card">
-                    <h3>Impossible App</h3>
-                    <p>Easy Peasy App</p>
-                </div>
-                <div class="card">
-                    <h3>Ad Blocker</h3>
-                    <p>random random radnom random random</p>
-                </div>
-                <div class="card">
-                    <h3>Money Maker</h3>
-                    <p>random random radnom random random</p>
-                </div>
-                <div class="card">
-                    <h3>Easy Peasy App</h3>
-                    <p>random random radnom random random</p>
-                </div>
-            </div>
+            </div> <!-- END OF NEW WRAPPER -->
             <div class="right-main-section">
-                <h2>Announcements</h2>
-                <div class="announcements">
-                    <p>Site Maintenance</p>
-                    <p>Community Share Day</p>
-                    <p>Updated Privacy Policy</p>
+                <div class="announcements-section">
+                    <h2>Announcements</h2>
+                    <div class="announcements">
+                        <p>Site Maintenance</p>
+                        <p>Community Share Day</p>
+                        <p>Updated Privacy Policy</p>
+                    </div>
                 </div>
+                <div class="trending-section">
                 <h2>Trending</h2>
-                <div class="trending">
-                    <p>@tegan</p>
-                    <p>@morgan</p>
-                    <p>@kendall</p>
-                    <p>@alex</p>
+                    <div class="trending">
+                        <p>@tegan</p>
+                        <p>@morgan</p>
+                        <p>@kendall</p>
+                        <p>@alex</p>
+                    </div>
                 </div>
             </div>
             
